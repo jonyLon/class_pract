@@ -13,13 +13,14 @@ namespace class_pract
             private string phone_code = "380-362";
             private string[] areas = new string[] {"rivne"};
             private int population = 250000;
-            //public City(string name, string country, string pcode, int population, params string[] areas) {
-            //    Name = name;
-            //    Country = country;
-            //    PhoneCode = pcode;
-            //    Population = population;
-            //    Areas = areas;
-            //}
+            public City(string name, string country, string pcode, int population, params string[] areas)
+            {
+                Name = name;
+                Country = country;
+                PhoneCode = pcode;
+                Population = population;
+                Areas = areas;
+            }
             public City(params string[] areas) 
             {
                 Areas = areas;
